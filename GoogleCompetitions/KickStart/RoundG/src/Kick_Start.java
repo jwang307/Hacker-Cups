@@ -12,16 +12,15 @@ public class Kick_Start {
             ArrayList<Integer> kick = new ArrayList<>();
             ArrayList<Integer> start = new ArrayList<>();
 
-            for (int j = 0; j <= text.length() - 4; j++) {
+            for (int j = 0; j <= text.length() - 5; j++) {
                 if (text.substring(j, j + 4).equals("KICK")) {
                     kick.add(j);
                 }
-            }
-            for (int j = 0; j <= text.length() - 5; j++) {
                 if (text.substring(j, j + 5).equals("START")) {
                     start.add(j);
                 }
             }
+          
             int count = 0;
 
             if (kick.size() == 0 || start.size() == 0) {
